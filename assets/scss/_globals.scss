@@ -1,0 +1,68 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin:0;
+    padding: 0;
+    line-height: 1.3;
+    font-size :1.125rem;
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+    &.no-scroll{
+        overflow-y: hidden;
+    }
+}
+.flex{
+    display:flex;
+    &-jc-sb{
+        justify-content:space-between;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+        align-items:center;
+    }
+}
+a,a:hover,a:visited,a:active{
+    text-decoration:none;
+}
+h1{
+    font-weight: 300;
+}
+@mixin maxWidth($size){
+    @media (max-width:map-get($breakpoints-down,$size))
+        {@content;}
+}
+@mixin minWidth($size){
+    @media (min-width:map-get($breakpoints-up,$size))
+        {@content;}
+}
+.myContainer{
+    width:87%;
+    padding:0px;
+}
+//hides for mobile viewport
+.hide-for-mobile{
+    @include maxWidth(small){
+        display:none;
+    }
+
+}
+//hides for mobile and table tviewport
+.hide-for-tablet{
+    @include maxWidth(medium){
+        display:none;
+    }
+
+}
+//hides for desktop viewport
+.hide-for-desktop{
+    @include minWidth(large){
+        display:none;
+    }
+}

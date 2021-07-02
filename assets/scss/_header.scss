@@ -1,0 +1,149 @@
+    .header{ 
+        nav{   
+            position: relative;
+            background-color: $White;
+            padding:1.5rem 0;
+            z-index: 5;
+            @include minWidth(large){
+            justify-content: space-between;
+            padding:1.5rem 7.5vw;
+            }
+            @include maxWidth(medium){
+                justify-content: space-between;
+                padding:1.5rem;
+            }
+        }
+
+        &.open{
+                .header-menu{
+                    >span:first-child{
+                    top:0px;
+                    transform: rotate(45deg);
+                    }
+                    >span:nth-child(2){
+                        opacity:0;
+                    }
+                    >span:last-child{
+                        top:0px;
+                        transform: rotate(-225deg);   
+                    }
+                }
+            }
+        &-logo{
+            img{
+                margin-top: 5px;
+                width:8.125rem;
+                height:1.25rem;
+            }
+        }
+        &-menu{
+            position: relative;
+            >span{
+                display:block;
+                position:absolute;
+                right:0;
+                width:1.375rem;
+                height:0.125rem;
+                background-color: $DarkBlue;
+                &:first-child{
+                    top:-5px;
+                    transition:top 0.3s, transform 0.35s;
+                }
+                &:nth-child(2){
+                    top: 0px;
+                }
+                &:last-child{
+                    top:5px;
+                    transition:top 0.5s,transform 0.6s;
+                }
+            }    
+        }
+        &-links {
+            a{
+                position: relative;
+                color:$GrayishBlue;
+                font-size: $font-sm; 
+                font-weight: $font-wt-sm;
+                transition: color 400ms ease-in-out;
+                &:not(:last-child){
+                    margin-right: 2.222vw;
+                }
+                &::before{
+                content: " ";
+                display: block;
+                height:5px;
+                width:100%;
+                background:linear-gradient(to right,$LimeGreen,$BrightCyan);
+                position:absolute;
+                left:0;
+                bottom:-2rem;
+                opacity: 0;
+                transition:opacity 300ms ease-in-out;
+                }
+                &:hover{
+                    color:$DarkBlue;
+                    &::before{
+                        opacity:1;
+                    }
+                }
+            }
+            
+        }
+        &-btn-cta{
+            font-size:$font-sm;
+            font-weight:$font-wt-lg;
+            padding:0.875rem 2.1875rem;
+            border-radius:2rem;
+            background:linear-gradient(to right,$LimeGreen,$BrightCyan);
+            color:$White;
+            transition:opacity 300ms ease-in-out;
+            &:hover{
+                opacity:0.7;
+            }
+        }
+        .overlay{
+        visibility: hidden;
+        position: absolute;
+        z-index: 3;
+        height:100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: linear-gradient($DarkBlue,transparent)
+        }
+        .burger-menu{
+            visibility: hidden;
+            position: absolute;
+            z-index: 4;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-between;
+            top: 6rem;
+            left:50%;
+            transform:translateX(-50%);
+            background-color:$White;
+            align-items:center;
+            border-radius:0.3125rem;
+            padding:1rem 0;
+            a{
+                padding: 0 2rem;
+                margin-top: 1.8rem;
+                color:$DarkBlue;
+                border-radius: 1rem;
+            }
+            a:last-child{
+                margin-bottom: 1.8rem;
+            }
+            a:hover{
+                color:$White;
+                background-color:$DarkBlue;
+            }
+        } 
+    }
+    .logo-for-desktop{
+        @include minWidth(large){
+        width: 8.8125rem !important;
+        height: 1.375rem !important;
+        }
+    }
+    

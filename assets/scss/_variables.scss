@@ -1,0 +1,25 @@
+//Colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+//font-weights
+$font-wt-lg:700;
+$font-wt-md:400;
+$font-wt-sm:300;
+
+//font-sizes
+$font-sm:0.875rem;//14px
+$font-md:1.125rem;//18px
+
+//media widths breakpoints
+// - Mobile: 375px-640px
+// - Tablet:640px-1024px
+// - Desktop: 1024px-1440px
+
+$breakpoints-up:("small":"24.4375em","medium":"40em","large":"64em","xlarge":"90em","md":"768px");
+$breakpoints-down:("small":"39.9375em","medium":"63.9375em","large":"89.9375em","md":"768px");
