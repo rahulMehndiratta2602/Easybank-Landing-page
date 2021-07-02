@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://rahulmehndiratta2602.github.io/Easybank-Landing-page/src/index.html)
+- Live Site URL: [Add live site URL here](https://rahulmehndiratta2602.github.io/Easybank-Landing-page/src/index.html)
 
 ## My process
 
@@ -58,9 +58,7 @@ I will be focussing on adding functionality to this website using NodeJS and Exp
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Rahul Mehndiratta](https://rahulmehndiratta2602.github.io/Portfolio-Website/src/index.html)
 
 
 ## Acknowledgments
