@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://rahulmehndiratta2602.github.io/Easybank-Landing-page/src/index.html)
-- Live Site URL: [Add live site URL here](https://rahulmehndiratta2602.github.io/Easybank-Landing-page/src/index.html)
+- Live Site URL: [https://rahulmehndiratta2602.github.io/Easybank-Landing-page/src/index.html]
 
 ## My process
 
